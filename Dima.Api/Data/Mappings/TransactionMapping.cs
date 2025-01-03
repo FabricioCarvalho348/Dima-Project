@@ -27,7 +27,7 @@ public class TransactionMapping : IEntityTypeConfiguration<Transaction>
         builder.Property(t => t.CreatedAt)
             .IsRequired();
         
-        builder.Property(t => t.PaidOrReceiveAt)
+        builder.Property(t => t.PaidOrReceivedAt)
             .IsRequired(false);
         
         builder.Property(t => t.UserId)
