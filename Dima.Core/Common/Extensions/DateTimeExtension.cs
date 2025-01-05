@@ -1,4 +1,4 @@
-﻿namespace Dima.Core.Common;
+﻿namespace Dima.Core.Common.Extensions;
 
 public static class DateTimeExtension
 {
