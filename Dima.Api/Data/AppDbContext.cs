@@ -17,8 +17,8 @@ public class AppDbContext(DbContextOptions<AppDbContext> options)
         IdentityRoleClaim<long>,
         IdentityUserToken<long>>(options)
 {
-    public DbSet<Category> Categories { get; set; }
-    public DbSet<Transaction> Transactions { get; set; }
+    public DbSet<Category> Categories { get; set; } = null!;
+    public DbSet<Transaction> Transactions { get; set; } = null!;
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
